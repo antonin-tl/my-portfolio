@@ -1,0 +1,83 @@
+@import 'variables';
+@import 'mixins';
+
+// ================================================================
+// ------------------------ FONT SIZES
+// ================================================================
+
+// @media screen and (min-width: 768px) {
+//     p {
+//         font-size: 20px;
+//     }
+// }
+
+// @media screen and (max-width: 767px) {
+//     p {
+//         font-size: 18px;
+//     }
+// }
+
+// ================================================================
+// ------------------------ TEXT ANCHORS
+// ================================================================
+
+.anchor-center {
+    text-align: center;
+}
+
+.anchor-end {
+    text-align: end;
+}
+
+// ================================================================
+// ------------------------ FLEXBOX
+// ================================================================
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.responsive {
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+// ================================================================
+// ------------------------ OVERLAY
+// ================================================================
+
+.old-computer-screen-grid {
+  pointer-events: none;
+  z-index: 99;
+  opacity: 1;
+  filter: none;
+  mix-blend-mode: overlay;
+  background-image: url("../media/640700f5c0e0ea29fd81703a_Overlay_.png");
+  background-position: 50%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}

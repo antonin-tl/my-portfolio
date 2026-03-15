@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonin THOMAS | Portfolio</title>
+
+    <link rel="icon" type="image/png" href="media/favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="grid-layout">
+        <div class="header-content flex row">
+            <a class="logo-icon" href="index.html#landing">
+                <img src="media/logo.png" alt="mon logo">
+            </a>
+            <nav class="desktop-nav">
+                <ul class="flex">
+                    <li><a class="link button blank" href="index.html#about">À PROPOS</a></li>
+                    <li><a class="link button blank" href="index.html#projects">PROJETS</a></li>
+                    <li><a class="link button blank" href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="burger-btn" aria-label="Ouvrir le menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a class="nav-link link button blank" href="index.html#about">À PROPOS</a></li>
+            <li><a class="nav-link link button blank" href="index.html#project">PROJETS</a></li>
+            <li><a class="nav-link link button blank" href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="grid-layout back">
+            <div class="container">
+                <a href="index.html#projects" class="flex link">
+                    <img src="media/icons/icon-arrow_left.png" alt="">
+                    <span>Retour aux projets</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="grid-layout content-project">
+            <div class="container flex column">
+                <div class="project-title flex column">
+                    <h1>Site web LocFit</h1>
+                    <span>2024</span>
+                </div>
+
+                <div class="img-container">
+                    <img src="media/projects/project-locfit.png" alt="">
+                </div>
+
+                <div class="project-tags flex row">
+                    <span class="tag">Design UX/UI</span>
+                    <span class="tag">Développement Web</span>
+                </div>
+
+                <div class="project-description">
+                    <h2>Contexte</h2>
+                    <p>Ce projet, réalisé dans le cadre d'une SAÉ (Situation d'Apprentissage et d'Évaluation), visait à concevoir et développer un site web de location d'équipements pour le sport, en partant d'un persona prédéfini.</p>
+
+                    <h2>Objectif</h2>
+                    <p>Conception et développement d'un site web de location d’équipements sportifs.</p>
+
+                    <h2>Travail réalisé</h2>
+                    <div class="flex column task-list">
+                        <div class="flex row task-item">
+                            <img src="media/icons/icon-arrow_right.png" alt="">
+                            <span>Veille : benchmark de l’offre et de la charte graphique des sites web concurrents afin de correspondre à un persona présélectionné.</span>
+                        </div>
+
+                        <div class="flex row task-item">
+                            <img src="media/icons/icon-arrow_right.png" alt="">
+                            <span>Maquettage : conception des flows utilisateurs et réalisation de la maquette du site web sur Figma, incluant le wireframe ainsi que le mockup.</span>
+                        </div>
+
+                        <div class="flex row task-item">
+                            <img src="media/icons/icon-arrow_right.png" alt="">
+                            <span>Développement : création du site web avec HTML, CSS et Javascript pour le frontend, et SQL ainsi que le framework Node.js pour le backend.</span>
+                        </div>
+                    </div>
+
+                    <h2>Outils utilisés</h2>
+                    <p>Canva, Figma, VSCode (HTML, CSS, JavaScript), SQL</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="grid-layout flex">
+        <div class="container flex column">
+            <span class="footer-copyright">Antonin THOMAS © Création originale 2026</span>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

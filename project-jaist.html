@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonin THOMAS | Portfolio</title>
+
+    <link rel="icon" type="image/png" href="media/favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="grid-layout">
+        <div class="header-content flex row">
+            <a class="logo-icon" href="index.html#landing">
+                <img src="media/logo.png" alt="mon logo">
+            </a>
+            <nav class="desktop-nav">
+                <ul class="flex">
+                    <li><a class="link button blank" href="index.html#about">À PROPOS</a></li>
+                    <li><a class="link button blank" href="index.html#projects">PROJETS</a></li>
+                    <li><a class="link button blank" href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="burger-btn" aria-label="Ouvrir le menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a class="nav-link link button blank" href="index.html#about">À PROPOS</a></li>
+            <li><a class="nav-link link button blank" href="index.html#project">PROJETS</a></li>
+            <li><a class="nav-link link button blank" href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="grid-layout back">
+            <div class="container">
+                <a href="index.html#projects" class="flex link">
+                    <img src="media/icons/icon-arrow_left.png" alt="">
+                    <span>Retour aux projets</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="grid-layout content-project">
+            <div class="container flex column">
+                <div class="project-title flex column">
+                    <h1>Stage au JAIST</h1>
+                    <span>2025</span>
+                </div>
+
+                <div class="img-container">
+                    <img src="media/projects/project-jaist.png" alt="">
+                </div>
+
+                <div class="project-tags flex row">
+                    <span class="tag">Design UX/UI</span>
+                    <span class="tag">Recherche UX</span>
+                </div>
+
+                <div class="project-description">
+                    <h2>Contexte</h2>
+                    <p>Ce projet de recherche a été mené au sein du Japan Advanced Institute of Science and Technology (JAIST), école nouvellement partenaire de l'IUT de Lannion, dans le cadre d'un stage à l'étranger de 11 semaines. Durant cette période, j'ai eu l'occasion de travailler sur un mini-projet de recherche, portant sur l'accessibilité de l'information pour les applications mobiles de tourisme.</p>
+
+                    <h2>Intitulé du projet</h2>
+                    <p>"Where is the info ? – A UX and AI-Based Approach to Reducing Information Access Frustration in Mobile Trip-planning Apps"</p>
+
+                    <h2>Travail réalisé</h2>
+                    <div class="flex column task-list">
+                        <div class="flex row task-item">
+                            <img src="media/icons/icon-arrow_right.png" alt="">
+                            <span>Recherches et veille : création d’une bibliographie et d’un état de l’art sur l'accessibilité de l'information et le tourisme en matière de design d'expérience.</span>
+                        </div>
+
+                        <div class="flex row task-item">
+                            <img src="media/icons/icon-arrow_right.png" alt="">
+                            <span>Analyse des besoins : création et diffusion d’un questionnaire utilisateur avec Sphinx Campus ; réalisation de personas et d’une user journey map.</span>
+                        </div>
+
+                        <div class="flex row task-item">
+                            <img src="media/icons/icon-arrow_right.png" alt="">
+                            <span>Maquettage : conception d’une maquette fonctionnelle d’application mobile avec Figma, incluant le design system, le wireframe et le mockup. Le résultat ? TabiNeko !</span>
+                        </div>
+
+                        <div class="flex row task-item">
+                            <img src="media/icons/icon-arrow_right.png" alt="">
+                            <span>Rapport : rédaction d'un article scientifique en interne sur le projet.</span>
+                        </div>
+                    </div>
+
+                    <h2>Outils utilisés</h2>
+                    <p>Figma, Sphinx Campus</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="grid-layout flex">
+        <div class="container flex column">
+            <span class="footer-copyright">Antonin THOMAS © Création originale 2026</span>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

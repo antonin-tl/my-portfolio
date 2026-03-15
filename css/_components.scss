@@ -1,0 +1,134 @@
+@import 'variables';
+@import 'mixins';
+
+// ================================================================
+// ------------------------ COMPONENTS
+// ================================================================
+
+// -------- Links --------
+
+.link {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.4s ease;
+
+    &:active {
+        text-decoration: underline;
+        transition: all 0.4s ease;
+    }
+}
+
+.button {
+    // display: inline-block;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+
+    img {
+        height: 28px;
+        margin-left: 0.6rem;
+        transition: all 0.4s ease;
+    }
+
+    &:hover img {
+        filter: brightness(0) saturate(100%) invert(6%);
+        transition: all 0.4s ease;
+    }
+
+    &.blank {
+        color: $white;
+        transition: all 0.4s ease;
+
+        &:hover {
+            background-color: rgb(251, 251, 251, 0.08);
+            transition: all 0.4s ease;
+        }
+    }
+
+    &.white {
+        color: $white;
+        border: 1px solid $white;
+        transition: all 0.4s ease;
+
+        &:hover {
+            color: $black;
+            background-color: $green_bright_mint;
+            border-color: $green_bright_mint;
+            transition: all 0.4s ease;
+            @include glow($green_bright_mint, 0.1);
+        }
+    }
+
+    &.green {
+        color: $black;
+        background-color: $green_bright_mint;
+        transition: all 0.4s ease;
+
+        &:hover {
+            background-color: $white;
+            transition: all 0.4s ease;
+        }
+    }
+}
+
+// -------- Cards --------
+
+.card {
+    border: 1px solid rgb(251, 251, 251, 0.08);
+    background-color: rgb(251, 251, 251, 0.04);
+    padding: 0.8rem;
+    border-radius: 4px;
+}
+
+// -------- Scramble --------
+
+.scramble {
+    user-select: none;
+}
+
+// -------- Extra margin --------
+
+.extra-margin {
+    margin-bottom: 16vh;
+}
+
+// -------- Bar --------
+
+.horizontal-bar {
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: $grey_light;
+}
+
+// -------- Image container --------
+
+.img-container {
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+}
+
+// -------- Adjustable Text --------
+
+.parent-container {
+    width: 100%;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.ajustable-text {
+    display: inline-block;
+    white-space: nowrap;
+    transform-origin: left top;
+    width: max-content;
+}

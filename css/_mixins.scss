@@ -1,0 +1,41 @@
+@import 'variables';
+
+// ================================================================
+// ------------------------ MIXINS
+// ================================================================
+
+// -------- Breakpoints --------
+
+@mixin mobile {
+  @media (max-width: #{$mobile - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile}) and (max-width: #{$desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$destkop}) {
+    @content;
+  }
+}
+
+// -------- Glow effect --------
+
+@mixin glow($color: $primary, $intensity: 0.5) {
+  box-shadow: 0 0 10px rgba($color, $intensity),
+              0 0 20px rgba($color, $intensity * 0.5),
+              0 0 30px rgba($color, $intensity * 0.3);
+}
+
+// -------- Text glow --------
+
+@mixin text-glow($color: $primary, $intensity: 0.8) {
+  text-shadow: 0 0 10px rgba($color, $intensity),
+               0 0 20px rgba($color, $intensity * 0.6),
+               0 0 30px rgba($color, $intensity * 0.4);
+}

@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Portfolio</title>
+    <title>Antonin THOMAS | Portfolio</title>
 
     <link rel="icon" type="image/png" href="media/favicon.ico">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -18,263 +21,261 @@
 </head>
 
 <body>
-    <header class="flex row">
-        <a href="index.html#landing">
-            <img src="media/logo-icon.svg" alt="mon logo">
-        </a>
-        <nav class="desktop-nav">
-            <ul class="flex">
-                <li><a class="link button blank" href="index.html#about">À propos</a></li>
-                <li><a class="link button blank" href="index.html#education">Parcours</a></li>
-                <li><a class="link button blank" href="index.html#projects">Projets</a></li>
-                <li><a class="link button green" href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="burger-btn" aria-label="Ouvrir le menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
+
+    <header class="grid-layout">
+        <div class="header-content flex row">
+            <a class="logo-icon" href="index.html#landing">
+                <img src="media/logo.png" alt="mon logo">
+            </a>
+            <nav class="desktop-nav">
+                <ul class="flex">
+                    <li><a class="link button blank" href="index.html#about">À PROPOS</a></li>
+                    <li><a class="link button blank" href="index.html#projects">PROJETS</a></li>
+                    <li><a class="link button blank" href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="burger-btn" aria-label="Ouvrir le menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
     </header>
 
     <nav class="mobile-nav">
         <ul>
-            <li><a class="nav-link link button blank" href="index.html#about">À propos</a></li>
-            <li><a class="nav-link link button blank" href="index.html#education">Parcours</a></li>
-            <li><a class="nav-link link button blank" href="index.html#projects">Projets</a></li>
-            <li><a class="nav-link link button green" href="index.html#contact">Contact</a></li>
+            <li><a class="nav-link link button blank" href="index.html#about">À PROPOS</a></li>
+            <li><a class="nav-link link button blank" href="index.html#project">PROJETS</a></li>
+            <li><a class="nav-link link button blank" href="index.html#contact">CONTACT</a></li>
         </ul>
     </nav>
 
-    <main class="layout">
-        <div class="flex column" id="landing">
-            <div>
-                <h1 class="scramble" data-text="Antonin THOMAS">Antonin THOMAS</h1>
-                <h2 class="anchor-end">Design UX et UI</h2>
-            </div>
-            <span>[↓]</span>
-        </div>
-
-        <div class="extra-margin" data-aos="fade-up" id="about">
-            <div class="section-title">
-                <h2>À Propos de Moi</h2>
-            </div>
-            <div class="section-content flex responsive">
-                <div class="about-img">
-                    <img src="media/about-photo.png" alt="ma photo">
+    <main>
+        <section class="grid-layout index" id="landing">
+            <div class="container flex column">
+                <div class="parent-container">
+                    <h1 class="adjustable-text scramble" data-text="ANTONIN">ANTONIN</h1>
                 </div>
-                <div class="about-text">
-                    <p>Bonjour, je m'appelle <span>Antonin THOMAS</span>, et je suis étudiant en 3ème année de BUT MMI (Métiers du Multimédia et de l'Internet) parcours Stratégie de communication numérique et design d'expérience à l'IUT de Lannion.</p>
+                <span>Design UI/UX et créations numériques</span>
+                <div class="mon-animation-pixel"></div>
+            </div>
+        </section>
 
-                    <p>Curieux, créatif et polyvalent, je souhaite poursuivre une carrière en tant que designer UX et UI. Ma motivation est de créer des interfaces et dispositifs qui soient humains, accessibles et performants, mais aussi innovants !</p>
-                    
-                    <a class="link button green" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/19z0V_j192KvJZRiNM3GTJM_LXOSCV2Xv/view?usp=sharing">Voir mon CV [↗]</a>
-
-                    <a class="link button green" target="_blank" rel="noopener noreferrer" href="https://linktr.ee/antonin.thomas">Voir mon Linktree [↗]</a>
+        <section class="grid-layout index" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>À PROPOS</h2>
+                    <span class="bar"></span>
+                    <span>01</span>
                 </div>
-            </div>
-        </div>
-
-        <div class="extra-margin flex column" data-aos="fade-up" id="education">
-            <div class="section-title">
-                <h2>Mon Parcours</h2>
-            </div>
-            <div class="section-content flex column">
-
-                <div class="degree flex row">
-                    <div class="degree-visual flex column">
-                        <img src="media/degree-mmi.svg" alt="">
-                        <span class="horizontal-bar"></span>
-                    </div>
-                    <div class="degree-text flex column">
-                        <h3>BUT MMI (Métiers du Multimédia et de l'Internet)</h3>
-                        <p>Parcours Stratégie de communication et design d'expérience</p>
-                        <p>IUT de Lannion, Université de Rennes - 2023 à 2026</p>
-                    </div>
-                </div>
-
-                <div class="degree flex row">
-                    <div class="degree-visual flex column">
-                        <img src="media/degree-lycee.svg" alt="">
-                        <span class="horizontal-bar"></span>
-                    </div>
-                    <div class="degree-text flex column">
-                        <h3>Baccalauréat général - Mention Assez Bien</h3>
-                        <p>Spécialités Mathématiques, Physique-Chimie et Sciences de l'Ingénieur</p>
-                        <p>Lycée René Descartes, Rennes - 2021 à 2023</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="extra-margin" data-aos="fade-up" id="projects">
-            <div class="section-title">
-                <h2>Projets Réalisés</h2>
-            </div>
-            <div class="section-content" id="project-list">
-
-                <a class="project card" href="/project.html">
-                    <div class="img-container">
-                        <img src="media/project-arcane.png" alt="">
-                    </div>
-                    <div class="text-container">
-                        <h3>Calendrier de l'Avent "Arcane"</h3>
-                        <div class="flex row">
-                            <div class="">
-                                <span>Dispositif interactif pour un calendrier de l'Avent</span>
+                <div class="about-content flex column">
+                    <div class="about-infos flex column">
+                        <div class="about-text flex responsive">
+                            <div class="title-about">
+                                <p>Bonjour, je m'appelle <span>Antonin THOMAS</span> et je suis passionné par le <span>design</span>.</p>
                             </div>
-                            <div class="button">
-                                <span>[→]</span>
+                            <div class="content-about flex column">
+                                <p>Je suis étudiant en 3ème année de <span>BUT Métiers du Multimédia et de l'Internet</span> parcours Stratégie de communication numérique et design d'expérience à l'IUT de Lannion.</p>
+
+                                <p>Curieux, créatif et polyvalent, je souhaite poursuivre une carrière dans les domaines du design d'expérience et du design d'interface.</p>
+                            </div>
+                        </div>
+
+                        <a class="link button white" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/19z0V_j192KvJZRiNM3GTJM_LXOSCV2Xv/view?usp=sharing">
+                            <span>Voir mon CV</span>
+                            <img src="media/icons/icon-arrow_external_link.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="about-experiences flex column">
+                        <div class="title">
+                            <h3>Diplômes</h3>
+                        </div>
+
+                        <div class="experience flex row">
+                            <div class="experience-visual flex column">
+                                <img src="media/logo-mmi.svg" alt="">
+                                <span class="horizontal-bar"></span>
+                            </div>
+                            <div class="experience-text flex column">
+                                <h4>BUT Métiers du Multimédia et de l'Internet (MMI)</h4>
+                                <span>IUT de Lannion, Université de Rennes</span>
+                                <span>Parcours Stratégie de communication et design d'expérience</span>
+                            </div>
+                        </div>
+
+                        <div class="experience flex row">
+                            <div class="experience-visual flex column">
+                                <img src="media/logo-lycee.svg" alt="">
+                                <span class="horizontal-bar"></span>
+                            </div>
+                            <div class="experience-text flex column">
+                                <h4>Baccalauréat général</h4>
+                                <span>Lycée René Descartes, Rennes</span>
+                                <span>Spécialités Mathématiques, Physique-Chimie et Sciences de l'Ingénieur</span>
                             </div>
                         </div>
                     </div>
-                </a>
 
-                <a class="project card" href="/project.html">
-                    <div class="img-container">
-                        <img src="media/project-orange.png" alt="">
-                    </div>
-                    <div class="text-container">
-                        <h3>Future Deskless Worker</h3>
-                        <div class="flex row">
-                            <div class="">
-                                <span>Scénario prospectif sur l'utilisation professionnelle de l'IA</span>
+                    <div class="about-experiences flex column">
+                        <div class="title">
+                            <h3>Expériences</h3>
+                        </div>
+
+                        <div class="experience flex row">
+                            <div class="experience-visual flex column">
+                                <img src="media/logo-ifremer.svg" alt="">
+                                <span class="horizontal-bar"></span>
                             </div>
-                            <div class="button">
-                                <span>[→]</span>
+                            <div class="experience-text flex column">
+                                <h4>Stage à Ifremer</h4>
+                                <span>Mars à juin 2026</span>
+                                <span>Création de contenus pour le site web et les réseaux sociaux de l'Ifremer</span>
                             </div>
                         </div>
-                    </div>
-                </a>
 
-                <a class="project card" href="/project.html">
-                    <div class="img-container">
-                        <img src="media/project-jaist.png" alt="">
-                    </div>
-                    <div class="text-container">
-                        <h3>Stage au JAIST</h3>
-                        <div class="flex row">
-                            <div class="">
-                                <span>Projet de recherche sur l'accessibilité de l'information</span>
+                        <div class="experience flex row">
+                            <div class="experience-visual flex column">
+                                <img src="media/logo-jaist.png" alt="">
+                                <span class="horizontal-bar"></span>
                             </div>
-                            <div class="button">
-                                <span>[→]</span>
+                            <div class="experience-text flex column">
+                                <h4>Stage au JAIST</h4>
+                                <span>Avril à juin 2025</span>
+                                <span>Projet de recherche sur l'accessibilité de l'information dans les applications
+                                    de tourisme</span>
                             </div>
                         </div>
-                    </div>
-                </a>
-
-                <a class="project card" href="/project.html">
-                    <div class="img-container">
-                        <img src="media/project-dolmen.png" alt="">
-                    </div>
-                    <div class="text-container">
-                        <h3>Opération Créa'IUT</h3>
-                        <div class="flex row">
-                            <div class="">
-                                <span>Collaboration avec l'entreprise Dolmen Manufacture SAS</span>
-                            </div>
-                            <div class="button">
-                                <span>[→]</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="project card" href="/project.html">
-                    <div class="img-container">
-                        <img src="media/project-at-tregor.png" alt="">
-                    </div>
-                    <div class="text-container">
-                        <h3>At'Trégor</h3>
-                        <div class="flex row">
-                            <div class="">
-                                <span>Site web mobile pour l'agrégation de spectacles dans le Trégor</span>
-                            </div>
-                            <div class="button">
-                                <span>[→]</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="project card" href="/project.html">
-                    <div class="img-container">
-                        <img src="media/project-locfit.png" alt="">
-                    </div>
-                    <div class="text-container">
-                        <h3>LocFit</h3>
-                        <div class="flex row">
-                            <div class="">
-                                <span>Site web de location d'équipements sportifs</span>
-                            </div>
-                            <div class="button">
-                                <span>[→]</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div class="extra-margin" data-aos="fade-up" id="contact">
-            <div class="section-title">
-                <h2>Me Contacter</h2>
-            </div>
-            <div class="section-content flex responsive">
-                <div class="contact-text">
-                    <p>Si vous souhaitez échanger avec moi, vous pouvez me contacter par mail, par téléphone ou via la messagerie LinkedIn.</p>
-                    <p>Je suis actuellement à la recherche d'un <span>stage de fin d'études</span> à partir du 9 mars 2026, pour une période d'environ <span>15 semaines</span>.</p>
-                </div>
-                <div class="contact-cards">
-                    <div class="flex row card">
-                        <i class="fa-solid fa-envelope fa-2x"></i>
-                        <span>antonin.pierre.thomas@orange.fr</span>
-                    </div>
-                    <div class="flex row card">
-                        <i class="fa-solid fa-location-dot fa-2x"></i>
-                        <span>Rennes (35) et Lannion (22)</span>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="grid-layout index" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2>PROJETS</h2>
+                    <span class="bar"></span>
+                    <span>02</span>
+                </div>
+                <div class="project-content">
+
+                    <a class="project" href="/project-roche_jagu.html">
+                        <div class="img-container">
+                            <img src="media/projects/project-roche_jagu.png" alt="">
+                        </div>
+                        <div class="text-container">
+                            <h3>Signalétique du parc de la Roche Jagu</h3>
+                            <span>Signalétique physique et dispositif interactif pour le parc de la Roche Jagu, dans le Trégor</span>
+                        </div>
+                    </a>
+
+                    <a class="project" href="/project-arcane.html">
+                        <div class="img-container">
+                            <img src="media/projects/project-arcane.png" alt="">
+                        </div>
+                        <div class="text-container">
+                            <h3>Calendrier de l'Avent "Arcane"</h3>
+                            <span>Dispositif interactif pour un calendrier de l'Avent sur le thème de la série animée "Arcane"</span>
+                        </div>
+                    </a>
+
+                    <a class="project" href="/project-orange.html">
+                        <div class="img-container">
+                            <img src="media/projects/project-orange.png" alt="">
+                        </div>
+                        <div class="text-container">
+                            <h3>Future Deskless Worker</h3>
+                            <span>Scénario prospectif sur l'utilisation de l'IA dans le milieu professionnel</span>
+                        </div>
+                    </a>
+
+                    <a class="project" href="/project-jaist.html">
+                        <div class="img-container">
+                            <img src="media/projects/project-jaist.png" alt="">
+                        </div>
+                        <div class="text-container">
+                            <h3>Stage au JAIST</h3>
+                            <span>Projet de recherche sur l'accessibilité de l'information dans les applications de tourisme</span>
+                        </div>
+                    </a>
+
+                    <a class="project" href="/project-dolmen.html">
+                        <div class="img-container">
+                            <img src="media/projects/project-dolmen.png" alt="">
+                        </div>
+                        <div class="text-container">
+                            <h3>Collaboration avec Dolmen</h3>
+                            <span>Projet d'entreprenariat en collaboration avec la marque de fabrication de vêtements de travail Dolmen Manufacture</span>
+                        </div>
+                    </a>
+
+                    <a class="project" href="/project-locfit.html">
+                        <div class="img-container">
+                            <img src="media/projects/project-locfit.png" alt="">
+                        </div>
+                        <div class="text-container">
+                            <h3>Site web LocFit</h3>
+                            <span>Conception et développement d'un site web pour la location de matériel de fitness</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-layout index" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>CONTACT</h2>
+                    <span class="bar"></span>
+                    <span>03</span>
+                </div>
+                <div class="contact-content flex responsive">
+                    <div class="contact-text">
+                        <span>Vous voulez me contacter ?</span>
+                        <br>
+                        <span>En savoir plus sur moi ?</span>
+                    </div>
+                    <div class="contact-links flex column">
+                        <a class="link button white" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/antonin-thomas/">
+                            <span>antonin<wbr>.pierre<wbr>.thomas<wbr>@orange<wbr>.fr</span>
+                            <img src="media/icons/icon-email.png" alt="Email">
+                        </a>
+
+                        <a class="link button white" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/antonin-thomas/">
+                            <span>Linkedin</span>
+                            <img src="media/icons/icon-linkedin.png" alt="Linkedin">
+                        </a>
+
+                        <a class="link button white" target="_blank" rel="noopener noreferrer" href="https://linktr.ee/antonin.thomas">
+                            <span>Linktree</span>
+                            <img src="media/icons/icon-linktree.png" alt="Linktree">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-layout index" id="back-to-top">
+            <div class="container">
+                <a class="link flex row" href="/index.html#landing">
+                    <img src="media/icons/icon-arrow_up.png" alt="">
+                    <span>Revenir en haut</span>
+                    <img src="media/icons/icon-arrow_up.png" alt="">
+                </a>
+            </div>
+        </section>
     </main>
 
-    <footer class="flex">
-        <div class="flex responsive">
-            <div class="flex">
-                <div>
-                    <ul class="flex column">
-                        <li><span>Navigation</span></li>
-                        <li><a class="link" href="index.html#about">À propos</a></li>
-                        <li><a class="link" href="index.html#education">Parcours</a></li>
-                        <li><a class="link" href="index.html#projects">Projets</a></li>
-                        <li><a class="link" href="index.html#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="flex column">
-                        <li><span>Liens externes</span></li>
-                        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/antonin-thomas/">LinkedIn [↗]</a></li>
-                        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://linktr.ee/antonin.thomas">Linktree [↗]</a></li>
-                        <li><a class="link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/19z0V_j192KvJZRiNM3GTJM_LXOSCV2Xv/view?usp=sharing">CV [↗]</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="flex column">
-                <span>antonin.pierre.thomas@orange.fr</span>
-                <span>Création originale © Antonin THOMAS 2026</span>
-            </div>
+    <footer class="grid-layout flex">
+        <div class="container flex column">
+            <span class="footer-copyright">Antonin THOMAS © Création originale 2026</span>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
 </body>
 
 </html>

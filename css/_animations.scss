@@ -1,0 +1,36 @@
+.mon-animation-pixel {
+    /* size of a single frame */
+    width: 72px;
+    height: 72px;
+
+    /* path to sprite sprite sheet */
+    background-image: url('/media/sprite_sheet.png');
+    background-repeat: no-repeat;
+
+    /* Position initiale : on commence sur la première frame (tout à gauche) */
+    background-position: 0 0;
+
+    /* Définition de l'animation :
+     - animerPixel : le nom de la règle @keyframes définie ci-dessous.
+     - 0.8s : la durée totale d'un cycle de l'animation (ajustez cette valeur pour la vitesse).
+     - steps(4) : C'EST LE POINT CLÉ. Cela force l'animation à sauter de 4 étapes nettes,
+                  plutôt que de glisser fluidement.
+     - infinite : l'animation tourne en boucle. */
+    animation: animerPixel 1s steps(2) infinite;
+
+    /* Optionnel : Pour mieux voir l'animation pixel art */
+    image-rendering: pixelated;
+    /* Pour garder les bords nets */
+}
+
+@keyframes animerPixel {
+    from {
+        /* start position */
+        background-position: 0px;
+    }
+
+    to {
+        /* end position (minus to go to the left) */
+        background-position: -144px;
+    }
+}

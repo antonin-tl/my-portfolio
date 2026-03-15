@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet - Antonin THOMAS | Portfolio</title>
+
+    <link rel="icon" type="image/png" href="media/favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="grid-layout">
+        <div class="header-content flex row">
+            <a class="logo-icon" href="index.html#landing">
+                <img src="media/logo.png" alt="mon logo">
+            </a>
+            <nav class="desktop-nav">
+                <ul class="flex">
+                    <li><a class="link button blank" href="index.html#about">À PROPOS</a></li>
+                    <li><a class="link button blank" href="index.html#projects">PROJETS</a></li>
+                    <li><a class="link button blank" href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="burger-btn" aria-label="Ouvrir le menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <ul>
+            <li><a class="nav-link link button blank" href="index.html#about">À PROPOS</a></li>
+            <li><a class="nav-link link button blank" href="index.html#project">PROJETS</a></li>
+            <li><a class="nav-link link button blank" href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="grid-layout back">
+            <div class="container">
+                <a href="index.html#projects" class="flex link">
+                    <img src="media/icons/icon-arrow_left.png" alt="">
+                    <span>Retour aux projets</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="grid-layout content-project">
+            <div class="container flex column">
+                <div class="project-title flex column">
+                    <h1>Calendrier de l'Avent "Arcane"</h1>
+                    <span>2025</span>
+                </div>
+
+                <div class="img-container">
+                    <img src="media/projects/project-arcane.png" alt="">
+                </div>
+
+                <div class="project-tags flex row">
+                    <span class="tag">Design UX/UI</span>
+                    <span class="tag">Production graphique/print</span>
+                    <span class="tag">Développement Web</span>
+                </div>
+
+                <div class="project-description">
+                    <h2>Contexte</h2>
+                    <p>Ce projet, réalisé dans le cadre d'un workshop mené par des anciens étudiants de l'école de design de Nantes, visait à concevoir un dispositif interactif avec une attention toute particulière sur l'implémentation de "bright" patterns dans l'expérience utilisateur.</p>
+
+                    <h2>Objectif</h2>
+                    <p>Concevoir un dispositif de calendrier de l'Avent interactif sur le thème d'un film ou d'une série (ici, la série "Arcane").</p>
+
+                    <h2>Travail réalisé</h2>
+                    <div class="flex column task-list">
+                        <div class="flex row task-item">
+                            <img src="media/icons/icon-arrow_right.png" alt="">
+                            <span>Idéation et création : définition du concept, de la charte graphique et du contenu pour le calendrier de l’Avent interactif.</span>
+                        </div>
+
+                        <div class="flex row task-item">
+                            <img src="media/icons/icon-arrow_right.png" alt="">
+                            <span>Maquettage : réalisation d’une maquette fonctionnelle avec Figma.</span>
+                        </div>
+
+                        <div class="flex row task-item">
+                            <img src="media/icons/icon-arrow_right.png" alt="">
+                            <span>Proof of Concept : création d’un prototype en HTML, CSS et JavaScript, avec Gemini (assistant IA de Google) permettant de dessiner par-dessus le retour vidéo de la caméra.</span>
+                        </div>
+
+                        <div class="flex row task-item">
+                            <img src="media/icons/icon-arrow_right.png" alt="">
+                            <span>Mise en scène de type “salon” : mise en place d’un stand, avec kakémonos et affiches, dans l’enceinte de l’IUT afin de présenter le projet et de faire essayer le prototype interactif au public.</span>
+                        </div>
+                    </div>
+
+                    <h2>Outils utilisés</h2>
+                    <p>Canva, Figma, InDesign, VSCode (HTML, CSS, JavaScript), Gemini AI</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="grid-layout flex">
+        <div class="container flex column">
+            <span class="footer-copyright">Antonin THOMAS © Création originale 2026</span>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
